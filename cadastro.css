@@ -1,0 +1,207 @@
+/* ===== ESTILO CADASTRO (IGUAL AO LOGIN) ===== */
+
+body.cadastro-page {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+    color: #d4af37;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 650px;
+    height: auto;
+    filter: drop-shadow(0 0 8px rgba(255, 213, 76, 0.5));
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 4.5em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1\px;
+    margin-top: -10px;
+    color: #d4af37;
+    animation: brilho 2s infinite alternate;
+}
+
+
+h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    color: #caa63a;
+    margin-top: 45px;
+}
+.cadastro-container {
+    background: rgba(17, 17, 17, 0.85);
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    padding: 40px 50px;
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+    max-width: 250px;
+    width: 90%;
+    margin-top: 60px;
+}
+
+.cadastro-container h1 {
+    font-size: 2em;
+    color: #d4af37;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cadastro-container .input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.cadastro-container input {
+    width: 100%;
+    padding: 12px 10px;
+    border: none;
+    border-bottom: 2px solid #d4af37;
+    background: transparent;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    transition: 0.3s;
+}
+
+.cadastro-container input:focus {
+    border-color: #ffcc33;
+    box-shadow: 0 2px 8px rgba(255, 204, 51, 0.3);
+}
+
+.cadastro-container button {
+    width: 100%;
+    padding: 10px 0;
+    background: #d4af37;
+    border: none;
+    border-radius: 8px;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.cadastro-container button:hover {
+    background: #ffcc33;
+    transform: scale(1.05);
+}
+
+.cadastro-container a {
+    color: gray;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cadastro-container a:hover {
+    color: #ffcc33;
+}
+
+footer {
+   position: absolute;
+    bottom: 0.3px;
+    font-size: 0.9em;
+    color: #a9892c;
+}
+
+/* ===== Estilo uniforme para ícones nos campos ===== */
+.input-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 10px; /* espaço à direita pro ícone */
+  border: none;
+  border-bottom: 2px solid #d4af37;
+  background: transparent;
+  color: #fff;
+  font-size: 1em;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-box input:focus {
+  border-color: #ffcc33;
+  box-shadow: 0 2px 8px rgba(255, 204, 51, 0.3);
+}
+
+/* Ícones de usuário e senha */
+.input-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: #d4af37;
+  opacity: 0.9;
+  transition: transform 0.12s ease;
+}
+
+/* Animação suave no hover */
+.input-box i:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Ícone de olho (mostrar/ocultar senha) */
+.toggle-pass {
+  right: 10px;
+}
+
+/* Ícone de usuário */
+.bxs-user {
+  right: 10px;
+}
+
+button {
+    width: 40%;
+    margin-top: 10px;
+    background: #daa520;
+    border: none;
+    padding: 10px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+   
+
+
+}
+
+button:hover{
+    background: #ffcc33;
+     transform: scale(1.05);
+}
+
+h3{
+
+    font-size: 1.3em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #d4af37;
+    animation: brilho 2s infinite alternate;
+    margin-top: 90px;
+
+}
+

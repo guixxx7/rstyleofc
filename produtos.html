@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reino Style - Produtos</title>
+  <link rel="stylesheet" href="produtos.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ===== CABEÇALHO ===== -->
+  <header>
+    <div class="logo">
+      <img src="imagens/reinostyle.png" alt="Logo Reino Style" height="120">
+    </div>
+    <h1 class="titulo-dourado">REINO STYLE</h1>
+
+    <nav>
+      <a href="#inicio" id="linkInicio">Início</a>
+      <a href="#produtos" id="linkProdutos">Produtos</a>
+      <a href="#contato" id="linkContato">Contato</a>
+    </nav>
+
+    <!-- BOTÃO DO CARRINHO -->
+    <button class="carrinho-btn" id="abrirCarrinho">
+      <i class="bx bx-cart"></i>
+      <span id="contador">0</span>
+    </button>
+  </header>
+
+  <!-- ===== SEÇÃO INÍCIO / INTRODUÇÃO ===== -->
+  <section id="inicio" class="introducao">
+    <div class="introducao-conteudo">
+      <h2>Bem-vindo a Reino Style</h2>
+      <p>
+        A <strong>Reino Style</strong> é mais que uma loja — é um estilo de vida inspirado na fé, moda e propósito. 
+        Nossa missão é deixar <span>seu estilo</span> de <span>adorar</span>, com mais fé, elegância e identidade.
+      </p>
+      <p>
+        Explore nossas coleções exclusivas e descubra peças que elevam sua presença com classe e significado.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO DE PRODUTOS ===== -->
+  <section id="produtos" class="produtos">
+    <div class="card" data-nome="Camisa Social" data-preco="130.00">
+      <img src="https://down-br.img.susercontent.com/file/sg-11134201-7qve7-lgcnc20n3e2tf2" alt="Camisa Social" height="150">
+      <h2>Camisa Social</h2>
+      <p>R$ 130,00</p>
+      <button class="add-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="card" data-nome="Sobretudo" data-preco="200.00">
+      <img src="https://m.media-amazon.com/images/I/61AxrtBM0iL._AC_SL1500_.jpg" alt="Sobretudo" height="150">
+      <h2>Sobretudo</h2>
+      <p>R$ 200,00</p>
+      <button class="add-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="card" data-nome="Sapato Social" data-preco="230.00">
+      <img src="https://static3.tcdn.com.br/img/img_prod/454968/sapato_social_democrata_pointer_hi_soft_masculino_250102_5789_2_db47e7abed43cc367992283f8b1c74f6.jpg" alt="Sapato Social" height="150">
+      <h2>Sapato Social</h2>
+      <p>R$ 230,00</p>
+      <button class="add-carrinho">Adicionar ao Carrinho</button>
+    </div>
+
+    <div class="card" data-nome="Tênis" data-preco="250.00">
+      <img src="https://static.zattini.com.br/produtos/tenis-feminino-casual-original-super-leve-estilo-social/14/PNK-0071-014/PNK-0071-014_zoom1.jpg?ts=1676391128&" alt="Tênis" height="150">
+      <h2>Tênis</h2>
+      <p>R$ 250,00</p>
+      <button class="add-carrinho">Adicionar ao Carrinho</button>
+    </div>
+  </section>
+
+  <!-- ===== SEÇÃO DE CONTATO ===== -->
+  <section id="contato" class="contato">
+    <h2>Entre em Contato</h2>
+    <p>Quer saber mais sobre nossos produtos?</p>
+    <p><i class="bx bx-phone"></i> (11) 91217-4350</p>
+    <p><i class="bx bxl-instagram"></i> <a href="https://www.instagram.com/__r.style?igsh=MTY1eGV0azFxMWg0dQ=="> @__r.style</a></p>
+  </section>
+
+  <!-- ===== MODAL DO CARRINHO ===== -->
+  <div class="carrinho" id="carrinho">
+    <div class="carrinho-conteudo">
+      <h2>Meu Carrinho</h2>
+      <ul id="listaCarrinho"></ul>
+      <p id="total">Total: R$ 0,00</p>
+      <button id="fecharCarrinho" class="botao-fechar">Fechar</button>
+      <button class="botao-pagamento">Formas de Pagamento</button>
+    </div>
+  </div>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer>
+    <p>&copy; 2025 Reino Style - Moda Cristã | Isaías 43:13</p>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    const botaoCarrinho = document.getElementById("abrirCarrinho");
+    const painelCarrinho = document.getElementById("carrinho");
+    const fecharCarrinho = document.getElementById("fecharCarrinho");
+
+    // abrir/fechar carrinho
+    botaoCarrinho.addEventListener("click", () => {
+      painelCarrinho.style.display = painelCarrinho.style.display === "block" ? "none" : "block";
+    });
+
+    fecharCarrinho.addEventListener("click", () => {
+      painelCarrinho.style.display = "none";
+    });
+
+    // rolagem suave
+    document.getElementById("linkInicio").addEventListener("click", (e) => {
+      e.preventDefault();
+      document.getElementById("inicio").scrollIntoView({ behavior: "smooth" });
+    });
+
+    document.getElementById("linkProdutos").addEventListener("click", (e) => {
+      e.preventDefault();
+      document.getElementById("produtos").scrollIntoView({ behavior: "smooth" });
+    });
+
+    document.getElementById("linkContato").addEventListener("click", (e) => {
+      e.preventDefault();
+      document.getElementById("contato").scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+
+  <script src="produtos.js"></script>
+</body>
+</html>
+

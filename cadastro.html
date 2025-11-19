@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - Reino Style</title>
+  <link rel="stylesheet" href="cadastro.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body class="cadastro-page">
+
+  <div class="logo">
+      <img src="imagens/reinostyle.png" alt="Reino Style" class="logo-img">
+      <h1>Cadastro Reino Style</h1>
+      <h2>Isaías 43:13</h2>
+      <h3>Insira seus dados</h3>
+  </div>
+
+  <main class="cadastro-container">
+    <form id="cadastroForm" novalidate>
+      <div class="input-box">
+        <input id="email" name="usuario" placeholder="E-mail" type="email" required>
+        <i class="bx bxs-user"></i>
+      </div>
+
+      <div class="input-box">
+        <input id="senha" name="senha" placeholder="Senha" type="password" required>
+        <i class="bx bx-hide toggle-pass" id="toggleSenha" title="Mostrar senha"></i>
+      </div>
+
+      <button type="submit">Cadastrar</button>
+
+      <p style="margin-top:15px;">Já tem conta?
+        <a href="index.html">Fazer login</a>
+      </p>
+
+      <p id="msg" style="margin-top:12px;color:#ffcc33;display:none;"></p>
+    </form>
+  </main>
+
+  <footer>
+        <p>© 2025 Kauan Guilherme, Célia Mota e Ana Clara</p>
+  </footer>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+    color: #d4af37;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 550px;
+    height: auto;
+    filter: drop-shadow(0 0 8px rgba(255, 213, 76, 0.5));
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 6em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 1\px;
+    margin-top: -10px;
+    color: #d4af37;
+    animation: brilho 2s infinite alternate;
+}
+
+
+h2 {
+    font-size: 2.5em;
+    font-weight: normal;
+    color: #caa63a;
+    margin-top: 45px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0.3px;
+    font-size: 0.9em;
+    color: #a9892c;
+}
+
+@keyframes brilho {
+    from { color: #b68e2d; }
+    to { color: #ffd700; }
+}
+
+button {
+    width: 40%;
+    margin-top: 10px;
+    background: #daa520;
+    border: none;
+    padding: 10px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+   
+
+
+}
+
+button:hover{
+    background: #ffcc33;
+     transform: scale(1.05);
+}
+
+
+.input-box {
+     padding: 5px;
+     align-items: center;
+     margin-top: 25px;
+     
+
+
+} 
+
+.remember-forgot {
+     display: flex;
+     justify-content: space-between;
+     margin: -15px 0 15px;
+
+}
+
+
+.remember-forgot label input {
+    accent-color: gold;
+    margin-right: 5px;
+    margin-top: 20%;
+
+
+}
+
+h3{
+
+    font-size: 1.3em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #d4af37;
+    animation: brilho 2s infinite alternate;
+    margin-top: 90px;
+
+}
+
+/* ===== LINKS ===== */
+a {
+    color: gray; /* Dourado igual ao texto principal */
+    text-decoration: none; /* remove o sublinhado padrão */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: gray; /* Dourado mais claro ao passar o mouse */
+    text-decoration: underline; /* opcional — pode remover se quiser */
+}
+
+/* ===== CONTAINER EM VOLTA DO FORMULÁRIO ===== */
+.login-box {
+    background: rgba(20, 20, 20, 0.8); /* Fundo escuro semi-transparente */
+    border: 2px solid #d4af37; /* Borda dourada */
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    padding: 30px 40px;
+    width: 300px;
+    margin-top: 65px;
+    text-align: center;
+    backdrop-filter: blur(8px); /* leve desfoque no fundo */
+}
+
+/* Ajuste dos inputs dentro da caixa */
+.login-box input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d4af37;
+    background: #111;
+    color: #fff;
+}
+
+.login-box input::placeholder {
+    color: #bbb;
+}
+
+/* ===== CAMPOS DE ENTRADA ===== */
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+    width: 85%;
+}
+
+.input-box i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d4af37;
+    font-size: 20px;
+}
+
+.input-box input {
+    width: 90%;
+    padding: 12px 12px 12px 40px; /* espaço à esquerda pro ícone */
+    border-radius: 8px;
+    border: 1px solid #d4af37;
+    background: #111;
+    color: #fff;
+    outline: none;
+    transition: 0.3s ease;
+    font-size: 1em;
+}
+
+.input-box input:focus {
+    border-color: #ffcc33;
+    box-shadow: 0 0 10px rgba(255, 204, 51, 0.5);
+}
+
+.input-box input::placeholder {
+    color: #b3b3b3;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d4af37;
+    font-size: 20px;
+}
+
+/* Ícone do cadeado à esquerda */
+.input-box .bxs-lock-alt {
+    left: 12px;
+}
+
+/* Ícone do olho à direita */
+.input-box #toggleSenha {
+    right: -250px;
+    cursor: pointer;
+}
+
+
+
